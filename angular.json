@@ -16,8 +16,12 @@
               "base": "./dist",
               "browser": "."
             },
-            "browser": "index.tsx",
-            "tsConfig": "tsconfig.json"
+            "index": "index.html",
+            "browser": "main.ts",
+            "tsConfig": "tsconfig.json",
+            "styles": [
+              "src/styles.css"
+            ]
           },
           "configurations": {
             "production": {
@@ -48,5 +52,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "5544f058-c9c2-4863-87b3-4b004f7eb1df"
   }
 }

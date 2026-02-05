@@ -1,12 +1,11 @@
 import { enableProdMode } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { AppComponent } from './src/app.component';
-import { provideZonelessChangeDetection } from '@angular/core';
- // Required for JIT
+import { provideExperimentalZonelessChangeDetection } from '@angular/core';
 
 bootstrapApplication(AppComponent, {
   providers: [
-    provideZonelessChangeDetection()
+    provideExperimentalZonelessChangeDetection()
   ]
 }).catch(err => console.error(err));
 
